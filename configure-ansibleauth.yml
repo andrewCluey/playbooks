@@ -17,7 +17,7 @@
     win_shell: |
       $ComputerName = $Env:COMPUTERNAME.ToLower()
       $name = new-object -com "X509Enrollment.CX500DistinguishedName.1"
-      $name.Encode(("CN=WinRM over HTTPS ($ComputerName),OU=Enterprise Systems VMW,O=Yorkshire Building Society"), 0)
+      $name.Encode(("CN=WinRM over HTTPS ($ComputerName),OU=OUName,O=ORGName"), 0)
 
       # Create a 2048 bit private key
       $key = new-object -com "X509Enrollment.CX509PrivateKey.1"
