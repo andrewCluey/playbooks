@@ -5,7 +5,7 @@ While this Readme contains some high level information on how the playbooks can 
 
 
 ## Repository Directory Structure
-This repository has been organised in such a way so as to make it easier to re-use both the generic 'Windows' playbooks, but also the 'service specific' playbooks (such as ATLAS.yml & ISIS.YML).
+This repository has been organised in such a way so as to make it easier to re-use both the generic 'Windows' playbooks, but also the 'service specific' playbooks.
 
 By cloning the entire repository to a host with Ansible installed, it should be relatively straightforward to use the playbooks for configuring a Windows Server. Cloning the repository will result in a directory satructure that will be similar to this:
 
@@ -20,9 +20,11 @@ By cloning the entire repository to a host with Ansible installed, it should be 
          |   |_dotnet3.yml
          |   |_dotnet4.yml
          |
-         |_atlas.yml
-         |_ISIS.yml
-      
+         |__vmware
+         |   |_
+         |   |_   
+         |   |_
+         
 ```
 The 'windows' directory contains playbooks that can be re-used to perform specific tasks on Windows Servers that are relatively common. Each of these playbooks will perform a specific task (such as installing .Net v3) and can easily be re-used in a 'Master' playbook using the 'Import_Playbook' parameter. Examples of this can be seen in the 'atlas.yml' and 'ISIS.yml' playbooks.
 
