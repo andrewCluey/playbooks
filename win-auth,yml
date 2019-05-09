@@ -1,4 +1,4 @@
-# Ansible playbook which configures a host for certficiate-based authentication
+# Ansible playbook which configures a host for certficate-based authentication
 # for the 'ansible' user
 
 - hosts: '{{ host }}'
