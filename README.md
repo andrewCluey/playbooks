@@ -1,5 +1,5 @@
 # Readme
-This repository contains Ansible Playbooks and related content that can be re-used for configuration of various Windows & Vmware infrastructure.
+This repository contains Ansible Playbooks and related content that can be re-used for configuration of Windows & VMware infrastructure.
 
 While this Readme contains some high level information on how the playbooks can be used, the key information on what a Playbook does can be found in the comments of the playbook itself.
 
@@ -31,12 +31,11 @@ The 'windows' directory contains playbooks that can be re-used to perform specif
 The master playbooks can be found Within the .\playbooks directory.
 
 ### Re-usable Playbooks
-Within the windows directory of this repository you will find several re-usable playbooks for Windows hosts. These have bene designed to be generic so that they can be easily re-used, either within 'master' playbooks (using the 'import_playbook' parameter), or the content can be copied into your own playbook and edited to fit your own requirements.
+Within the windows directory of this repository you will find several re-usable playbooks for Windows hosts. These have been created as generic as possible.
 
 Additional detail on what each playbook does can be found in the .yml file itself.
 
 The intention is that this directory becomes a library of re-usable content that can be referred back to for future use. When adding a re-usuable playbook, try to pick a descriptive name for the file. For example, dotnet4.yml will install .net core framework 4.5.
-
 
 ## Ansible Overview
 
